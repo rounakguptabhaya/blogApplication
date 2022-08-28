@@ -2,7 +2,7 @@ import express from 'express';
 import { gettAllBlogs,addBlog, updateBlog, getByID, deleteBlog, getByUserId } from '../controllers/blogs-controller';
 const blogRouter = express.Router();
 
-blogRouter.get("/", gettAllBlogs)
+blogRouter.get("/allblog", gettAllBlogs)
 
 blogRouter.post("/add", addBlog)
 
