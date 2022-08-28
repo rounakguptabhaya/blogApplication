@@ -3,7 +3,7 @@ import { getAllUser, login, signup } from '../controllers/user-controller';
 
 const router = express.Router();
 
-router.get("/alluser",getAllUser);
+router.get("/",getAllUser);
 
 router.post("/signup", signup);
 

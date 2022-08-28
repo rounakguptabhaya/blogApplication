@@ -14,7 +14,7 @@ app.use("/api/blog",blogRouter);
 mongoose.connect(
     'mongodb+srv://admin:c72ru00n5XJaLvcU@cluster0.2ovanxa.mongodb.net/Blog?retryWrites=true&w=majority'
 )
-    .then(() => app.listen(5000))
+    .then(() => app.listen(process.env.PORT || 5000))
     .then(() => console.log("Server running on localhost 5000"))
     .catch((err) => console.log(err));
 
